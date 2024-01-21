@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
       error: false,
     },
     {
-      name: 'BuzzFeed Quizzes',
-      link: 'https://buzzfeed.com/quizzes',
+      name: 'Render',
+      link: 'https://render.com',
       image: '/assets/media/icons/apps/buzzfeed.png',
       categories: ['all', 'media'],
       error: false,
@@ -254,8 +254,8 @@ document.addEventListener('DOMContentLoaded', () => {
       error: false,
     },
     {
-      name: 'ChatGPT Clone',
-      link: 'https://chat.shuttleai.app/',
+      name: 'ChatGPT better',
+      link: 'https://deepai.org/',
       image: '/assets/media/icons/chatgpt.png',
       categories: ['all', 'AI'],
       error: false,
