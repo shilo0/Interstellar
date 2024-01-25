@@ -1,11 +1,12 @@
-FROM node:20-alpine
+FROM node:iron-bookworm-slim
+ENV NODE_ENV=production
 
-RUN apk add --no-cache git
+WORKDIR /app
 
-RUN git clone https://github.com/zxypmmmmm/Interstellar.git
-
-WORKDIR /Interstellar
+COPY ["package.json", "./"]
 
 RUN npm install
 
-CMD npm start
+COPY . .
+
+CMD [ "node", "index.js" ]
