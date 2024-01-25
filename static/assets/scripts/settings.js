@@ -151,7 +151,7 @@ function AB() {
       const link = doc.createElement('link')
       const name = localStorage.getItem('name') || 'My Drive - Google Drive'
       const icon =
-        localStorage.getItem('icon') || 'https://ssl.gstatic.com/assets/media/branding/product/1x/drive_2020q4_32dp.png'
+        localStorage.getItem('icon') || 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'
       doc.title = name
       link.rel = 'icon'
       link.href = icon
@@ -164,5 +164,17 @@ function AB() {
       doc.body.appendChild(iframe)
       location.replace('https://classroom.google.com')
     }
+  }
+} 
+function toggleAB() {
+  ab = localStorage.getItem('ab')
+  if (ab == null) {
+    localStorage.setItem('ab', 'false')  
+  }
+  else if (ab == 'true') { 
+    localStorage.setItem('ab', 'false')
+  }
+  else {
+    localStorage.setItem('ab', 'true')
   }
 }
